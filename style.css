@@ -1,0 +1,359 @@
+/* CSS RESET */
+
+html, body, header, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, main, nav, output, ruby, section, summary, time, mark, audio, video { 
+
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	font-size: 100%; 
+	font: inherit; 
+    vertical-align: baseline;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fcf7f7;
+    background-color: #141414;
+    text-align: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+}
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: 0.1s;
+}
+.header:hover::after{
+    left: 100%;
+}
+.logo{
+    width: 10%;
+  }
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+#check {
+    display: none;
+}
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: black;
+  min-width: 200px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+section {
+    position: relative; /* Sørger for at overskiften i header kan placeres ovenpå billedet */
+    display: flex; /* Sørger for at vi kan placere billedteksten i midten af skærmen */
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+/* Centreret tekst */
+section h1 {
+    position: absolute; 
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Sørger for at overskriften sidder i midten af billedet både vandret og lodret */
+    font-size: 3em;
+    font-weight: 600;
+}
+
+p { 
+    width: 75%;
+    line-height: 180%;   
+}
+
+main {
+    display: flex; /* Sørger for at alle elementerne i main hænger sammen uden at der kommer "huller" af luft imellem */
+    flex-direction: column;
+}
+
+.børne_arrangementer_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Sørger for at knapperne på siden med forskellige børnearrangementer er placeret i midten */
+}
+  
+.arrangementer_btn {
+    display: inline-block;
+    width: 65%;
+    height: auto;
+    font-size: 1em;
+    color: #141414;
+    background-color: #afcb67;
+    text-decoration: none;
+    border-radius: 60px;
+    padding: 45px 32px;
+    margin-bottom: 50px;
+}
+
+#blue_btn {
+    background-color: #47a9da;
+}
+
+#red_btn {
+    background-color: #f7505a;
+}
+
+.bold_text {
+    font-weight: 600;
+}
+
+.green_bold_text {
+    font-weight: 600;
+    color:#afcb67;
+}
+
+.margin_top {
+    margin-top: 20px;
+}
+
+.margin_bottom {
+    margin-bottom: 20px;
+}
+
+#black_text {
+    color: #141414;
+}
+
+#black_bold_text {
+    font-weight: 600;
+    color:#141414;
+}
+
+#red_bold_text {
+    font-weight: 600;
+    color: #f7505a;
+}
+
+.rød_bue_container {
+    background-color: #f7505a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.white_text {
+    color: #fcf7f7;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    font-size: 2em; /* Sørger for at gøre skriftstørrelsen på alle h3 det dobbelte af standarden for h3-overskrifter */
+    font-weight: 600;
+}
+
+ul {
+    line-height: 300%;
+    list-style-position: inside; /* Sørger for at punkterne er centreret ligesom teksten */
+    width: 75%;
+    margin-top: 20px;
+}
+
+.blå_bue_container {
+    background-color: #47a9da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+button {
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    background: #afcb67;
+    color: #141414;
+}
+
+h4 {
+    margin-top: 20px;
+    color: #141414;
+    font-weight: 600;
+}
+
+.aldersgrupper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+  }
+
+ 
+  /* Styleregler til de 3 classes (card, card-header, card-main)!*/
+
+.card {
+    width: 170px;
+    display: flex; /* denne div er "parent" og flex-container. Child-elementerne nedarver flex og er nu flex-items*/
+    flex-direction: column;
+    border: 1px solid #afcb67;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card-header {
+    text-align: center;
+    border-bottom: 1px solid #afcb67;
+    background-color: #141414;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card-main {
+    display: flex; /* denne div er "parent" og flex-container. Child-elementerne nedarver flex og er nu flex-items til denne container*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card_bred {
+    width: 340px;
+    display: flex; /* denne div er "parent" og flex-container. Child-elementerne nedarver flex og er nu flex-items*/
+    flex-direction: column;
+    border: 1px solid #afcb67;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card-main h4 {
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon {
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: black;
+        box-shadow: 0 .5rem 1rem black;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    .dropdown{
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    transform: translateY(16px);
+    background: black;
+    min-width: 160px;
+    box-shadow: black;
+    z-index: 1;
+    margin-top: 5px;
+}
+.logo{
+    width: 10%;
+}
+    #check:checked~.navbar{
+        height: 30.7rem;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 1.2rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay:calc(.15s * var(--i));
+    }
+}

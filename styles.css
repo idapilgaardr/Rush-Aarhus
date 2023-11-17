@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+      min-height: 100vh;
+      background: black;
+      background-size: cover;
+      background-position: center;
+  }
+  .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1.3rem 10%;
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+  }
+  .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      z-index: -1;
+}
+  .header::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: black;
+      transition: 0.1s;
+  }
+  .header:hover::after{
+      left: 100%;
+  }
+  .logo{
+      width: 10%;
+    }
+  .navbar a {
+      font-size: 1.15rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 2.5rem;
+  }
+  #check {
+      display: none;
+  }
+  .icons{
+      position: absolute;
+      right: 5%;
+      font-size: 2.8rem;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: black;
+    min-width: 200px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  /*end of header+navbar styling*/
+  /* styling of videoe starts   */
+  .video{
+    margin-top: 1%;
+    width: 100%;
+}
+  /*start of image styling*/
+  #bue {
+    position: static;
+    z-index: 20;
+    width: 100%;
+}
+
+.bue2{
+    position: static;
+    margin-top: -9%;
+ z-index: 20;   
+ width: 100%;
+}
+
+.bue3 {
+    position: static;
+    z-index: 20;
+    width: 100%;
+    margin-top: -9%;
+}
+.bue4{
+    position: static;
+    z-index: 20;
+    width: 100%;
+    margin-top: -9%;
+}
+.kid{
+    position: relative;
+    z-index: -10;
+    height: 5%;
+    margin-top: -11%;
+}
+.battlebeam{
+    position: relative;
+    z-index: -10;
+    height: 5%;
+    margin-top: -11%;
+}
+.bday{
+    position: relative;
+    z-index: -10;
+    height: 5%;
+    margin-top: -11%;
+}
+  /*end of image styling*/
+  /*start of btn styling*/
+  .btn{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    text-transform:uppercase ;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 36%;
+    margin-top:58.5%;
+}
+.btn--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn2{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    text-transform:uppercase ;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 36%;
+    margin-top: -0%;
+}
+.btn2--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn3{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    text-transform:uppercase ;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 36%;
+    margin-top: 7%;
+}
+.btn3--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+  /*end of btn stylinh*/
+/*footer styling start*/
+footer {
+    padding: 5px;
+    background-color: black;
+  }
+small{
+    color: white;
+}
+
+.footer-col, a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    transition: all 0.3s;
+}
+.footer-col a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.footerlogo{
+    width: 25%;
+    margin-left: 40%;
+}
+.icon{
+    margin-left: 45%;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background: #ffffff;
+
+}
+/*end of footer styling*/
+/*text styling*/
+h2{ 
+    color: white;
+    text-align: center;
+    z-index: 100;
+}
+
+.hg2 {
+    margin-top: 30%;
+}
+
+.hh2 {
+    color: #f7505a;
+    text-align: center;
+}
+span{
+    color: #f7505a;
+    text-transform: capitalize;
+}
+h1{ 
+    color: #f7505a;
+    text-align: center;
+}
+.hh3{
+margin-left: 26%;
+}
+.hhh3{
+    margin-left: 26%;
+}
+h3{
+    color: white;
+    z-index: 8;
+    margin-left: 38%;
+    margin-top: -60%;
+    font-size: 50px;
+}
+h4{
+    color: white;
+    z-index: 8;
+    font-size: 19px;
+    margin-left: 26%;
+    line-height: 2;
+}
+.h4{
+    color: black;
+    margin-left: 20.5%;
+    margin-top: -1%;
+}
+.hhh4{
+    color: black;
+    margin-left: 25%;
+    margin-top: -1%;
+}
+.hhhh4{
+    color: black;
+    margin-left: 26%;
+    margin-top: -1%;
+}
+.hhhhh4{
+    color: black;
+    margin-left: 20%;
+    margin-top: -1%;
+}
+.hhhhhg4{
+    margin-left: 20%;
+}
+.hh4{
+    margin-left: 43%;
+    margin-top: 10%
+}
+.copy{
+    margin-left: 50%;
+    color: white;
+}
+p{
+    font-size: 100%;
+    margin-left: 29%;
+    color: #fff;
+}
+h5{
+    margin-left: 26%;
+    color: #fff;
+}
+
+.h5{
+    color: black;
+}
+.hh5{
+    color: black;
+    margin-left: 20%;
+}
+.hhhhhhhhh4
+{ 
+    margin-left: 20%;
+    
+}
+.span{
+    color: black;
+}
+#klipteskt{
+    color: black;
+}
+
+/*end of styling of text*/
+@media (min-width: 992px) {
+    .header{
+        padding: 1.3rem 5%;
+    }
+    img {
+        width: 50%;
+        z-index: -51;
+    }
+}
+@media (max-width: 768px) {
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon {
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: black;
+        box-shadow: 0 .5rem 1rem black;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    .dropdown{
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    transform: translateY(16px);
+    background: black;
+    min-width: 160px;
+    box-shadow: black;
+    z-index: 1;
+    margin-top: 5px;
+}
+.logo{
+    width: 10%;
+}
+    #check:checked~.navbar{
+        height: 30.7rem;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 1.2rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay:calc(.15s * var(--i));
+    }
+}
+@media screen and (min-width: 1024px){
+    .btn{
+    font-size: 1.5rem;
+    width: 25%;
+    }
+    .btn--outline:hover{
+        background: black;
+        color: #fff;
+    }
+}
+img{
+    width: 100%;
+}
+@media (min-width: 1158px) {
+        .video{
+        width: 100%;
+        height: 70vh;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        margin-top: 9.9%;
+        }
+        .btn--outline:hover{
+            background: #afcb67;
+            color: #fff;
+        }
+        .btn{
+            margin-top: 36.6%;
+            margin-left: 40%;
+        }
+    }
+    @media (min-width: 1172px){
+        .bue{
+         position: static;
+        z-index: 20;
+        width: 100%; 
+        margin-top: 4%;
+        }
+       
+        .kid{
+            position: relative;
+            z-index: -10;
+            height: 5%;
+            margin-top: 30%;
+        }
+        .bue2{
+            position: static;
+            margin-top: -30%;
+         z-index: 20;   
+         width: 100%;
+         height: 90%;
+        }
+
+        .bue3 {
+            position: static;
+            z-index: 20;
+            width: 100%;
+            margin-top: -2%;
+            height: 90%;
+        }
+        .battlebeam{
+            position: relative;
+            z-index: -10;
+            height: 5%;
+            margin-top: 30%;
+        }
+        .hg2{
+            margin-top: 40%;
+        }
+
+        .hh3{
+            margin-left: 35%;
+        }
+        h4{
+            margin-left: 35%;
+        }
+        h3{
+            color: white;
+            z-index: 8;
+            margin-left: 42.5%;
+            margin-top: -60%;
+            font-size: 50px;
+        }
+        .h4{
+            color: black;
+            margin-left: 34%;
+            margin-top: -1%;
+        }
+        
+    }
